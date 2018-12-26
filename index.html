@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Michelson Interferometer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+			<a class="navbar-brand" href="#Home">Michelson Interferometer</a>
+			<button class="navbar-toggler" type="data-toggle=collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item"><a class="nav-link" href="#HI"> Historical Importance </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Experiment"> Experiment </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Explanation">Explanation</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Aplications
+						</a>
+						<div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+
+							<a class="dropdown-item" href="#FS">Fourirer Transformer</a>
+							<a class="dropdown-item" href="#GW">Gravitational Waves</a>
+							<a class="dropdown-item" href="#AS">Atmospheric and Space</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Learn More
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#AR">Apps and resources </a>
+							<a class="dropdown-item" href="#BR">Articles and references </a>
+						</div>
+					</li>
+				</ul>
+			</div>
+        </div>
+    </nav>
+
+<!-- Main Container -->
+<div class="container main" id="Home">
+	<div class="row" >
+		<div class="col-lg-12">
+			<!--- Video  -->
+			<div align="center" class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="video/video.mp4"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<div  class="container-fluid" id="HI" >
+		<div class="row">
+			<h1 style="color: black">Historical Importance</h1>
+			<div class="col-md-12">
+		<p class="text-justify">
+			In general, an interferometer is an optical instrument that produces optical interference.
+			The Michelson interferometer became well known for its use by Albert Michelson and Edward Morley in the famous Michelson-Morley experiment (1887) in a configuration which would have detected the earth’s motion through the supposed luminiferous aether that most physicists at the time believed was the medium in which light waves propagated.
+			The null result of that experiment essentially disproved the existence of such an aether, leading eventually to the special theory of relativity and the revolution in physics at the beginning of the twentieth century. The Michelson Interferometer has also been used to provide evidence for the special theory of relativity, to detect and measure hyperfine structure in line spectra, to measure the tidal effect of the moon on the earth and to provide a substitute standard for the meter in terms of wavelengths of light.
+		</p>
+		<br><br>
+				<div class="text-center">
+					<img src="img/mi.JPG" class="img-fluid" alt="Albert Michelson">
+					<figcaption class="figure-caption">
+						Figura 1 – Albert Michelson
+					</figcaption>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div  class="container-fluid" id="Experiment" >
+		<div class="row">
+			<h1 style="color: black">The Experiment</h1>
+			<div class="col-md-12">
+
+				The Michelson interferometer causes interference by splitting a beam of light (I₀) into two parts (I₁ and I₂).
+				One part of the light (E₁) travels (l₁) a different path length (l₂) than the other (E₂). Each of those light beams is reflected back toward the beamsplitter which then the two parts of the light are brought together combining their amplitudes thus causing an interference according to their path length difference (δ).
+				The interference pattern can be seen on a screen (plane of observation). (as shown in Figure 1).
+
+				<div class="text-center">
+				<img src="img/exp.png" class="img-fluid" alt="michelson interferometer configuration">
+					<figcaption class="figure-caption">
+						Figura 2 – Michelson Interferometer.
+						D: semi reflective glass beam splitter,
+						E1: movable mirror,
+						E2: fixed mirror,
+						LE: divergent lens.
+					</figcaption>
+				</div>
+
+
+				<br><br>
+				In the plane of observation (Figure 2), the electric field of the resulting wave is given by:<br><br>
+				<center>E = E_1+E_2 = 2*E_0*cos⁡(δ/2)*sin⁡(ωt+δ/2)</center> <br><br>
+				With:<br>
+				<center>δ = [2π/(λₙ)]*Δl = 2π/((λ₀)/n)*[(l₁-l₂)] = 2π Δ/(λ₀)</center><br><br>
+
+				<div class="text-center">
+					<img src="img/fringes.jpg" class="img-fluid" alt="fringes">
+					<figcaption class="figure-caption">
+						Figura 3 – Pattern of interference
+					</figcaption>
+				</div>
+				<br><br>
+				Where <b>n</b> is the <b>refraction index of the mean</b> , <b>λ₀</b> the <b>wave length of light in vacuum</b> and <b>Δ</b> the <b> optical path difference</b>.
+				Making the maximum of interference when the argument of the function is a multiple of 2π, that is: <br><br>
+				<center>Δ/(λ₀) = m 	,with m = 1, 2, 3, 4,...</center><br>
+				<center>Δ = n*(l₁-l₂)</center>
+
+				<br><br>
+				Is possible to change the pattern on the fringes by changing the distance traveled by each beam (l₁ or l₂) or by changing the refraction index (n) of where one of the beams passes.<br><br>
+				With the movable mirror is possible to change the distance of the path of beam 1.
+				When we move this mirror from a distance d, the beam propagates twice this (round-trip) displacement, and we observe the occurrence of a number of fringes Δm, that is:<br>
+				<br><center>[n/(λ₀)] * 2d = Δm</center><br>
+				From here a lot of different experiments are possible, such as, determine the wave length of a given light beam or measure how the refraction index of a given mean varies with pressure: <a href="https://www.overleaf.com/project/5c11779e77213c11a10a48c5" target="_blank">example of laboratorial experiments</a>.
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div id="Explanation" class="container-fluid">
+		<h1 style="color: black">Explanation</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<p class="text-justify">
+					When the beams are recombined at the beam splitter before reaching the detector they interfere with each other either constructively or destructively.
+					During the constructive interference the two beams are in phase and the peaks of both beams reinforce each other resulting in a bright fringe, where as during the destructive interference the beams are out of phase and the peaks of one beam are cancelled by the troughs of the second beam resulting in a dark fringe.
+					The displacement of the measurement arm causes change in the relative phase of the two beams. This cycle of the destructive and constructive interference causes the intensity of the recombined light to undergo cyclic variation. One cycle of variation in intensity from light to dark to light occurs every time the measurement arm/retroreflector is moved by λ/2 (half of the light wavelength).
+					Therefore the movement is measured by calculating the number of cycles using the following formula:<br>
+				</p>
+
+
+				<br><center>d = [N/(λ)] / 2 </center><br>
+
+				<br> Where d is the displacement, λ the wave length of the beam, and N the number of fringes passed. [4]<br>
+
+			</div>
+		</div>
+
+		<div class="row " style="padding-top: 20px; padding-bottom: 20px">
+			<div class="column center">
+				<img src=" img/cons_int_.png " class="img-thumbnail rounded float-left" alt="Snow" style="width:100%" >
+				<figcaption class="figure-caption text-center">
+				Figura 4 – Constructive interference
+				</figcaption>
+			</div>
+			<div class="column center">
+				<img src=" img/dest_int_.png " class="img-thumbnail rounded float-right" alt="Forest" style="width:100%" >
+				<figcaption class="figure-caption text-center">
+					Figura 5 – Destructive intereference
+				</figcaption>
+			</div>
+		</div>
+
+	</div>
+
+	<br><br>
+
+	<div id="Aplications" class="container-fluid">
+		<h1 style="color: black">Aplications</h1>
+		<div class="row">
+			<div class="col-md-12">
+				Besides the already shown, the Michelson Interferometer has a lot of other applications, such as:
+				<br><br>
+				<h3 style="color: black"id="FS">Fourier transform spectrometer</h3>
+				<p class="text-justify">
+				The Michelson interferometer is essentially the basis for the implementation of a Fourier transform spectrometer,
+				this last one only varying by having one movable mirror. By making measurements of the signal at many discrete positions of the moving mirror is possible to generate an interferogram.
+				A Fourier transform converts the interferogram into an actual spectrum. Fourier transform spectrometers can offer significant advantages over dispersive (i.e. grating and prism) spectrometers under certain conditions.
+
+				The Michelson interferometer's detector in effect monitors all wavelengths simultaneously throughout the entire measurement.
+				When using a noisy detector, such as at infrared wavelengths, this offers an increase in signal to noise ratio while using only a single detector element;
+				the interferometer does not require a limited aperture as do grating or prism spectrometers, which require the incoming light to pass through a narrow slit in order to achieve high spectral resolution. This is an advantage when the incoming light is not of a single spatial mode. [1]
+				<br><br>
+				</p>
+				<div class="text-center">
+					<img src="img/FTS.png" class="img-fluid" alt="michelson interferometer configuration">
+					<figcaption class="figure-caption">
+						Figura 6 – Fourier-transform spectrometer
+					</figcaption>
+				</div>
+				<br><br>
+				<h3 style="color: black" id="GW">Gravitational waves detection</h3>
+				<p class="text-justify">
+				Michelson interferometry is one leading method for the direct detection of gravitational waves.
+				It does so by detecting tiny strains in space itself, affecting two long arms of the interferometer unequally,
+				due to a strong passing gravitational wave.
+				<br><br><br>
+				</p>
+				<div class="text-center">
+					<img src="img/GW.jpg" class="img-fluid" alt="gravitational waves detention configuration">
+					<figcaption class="figure-caption">
+						Figura 7 – Gravitational Wave detection
+					</figcaption>
+				</div>
+				<br><br>
+				<p class="text-justify">
+				In 2015 the first detection of gravitational waves was accomplished using the LIGO instrument,
+				a Michelson interferometer with 4 km arms. This was the first experimental validation of gravitational waves,
+				predicted by Albert Einstein's General Theory of Relativity. With additional interferometers placed on other continents,
+				like the Virgo placed in Europe, it became possible to calculate the direction where the gravitational waves originate,
+				from the tiny time difference when the signals arrive at each station. An even larger Michelson interferometer in space,
+				to achieve greater sensitivity, is in the planning stages. [2]
+				<br><br>
+				</p>
+				<h3 style="color: black"id="AS">Atmosphere and space</h3>
+				<p class="text-justify">
+				The Michelson Interferometer has been the base for the development of other more advanced models of such device for applications beyond the earth
+				atmosphere it has played an important role in such field of studies, revealing temperatures and winds, employing both space-borne, and ground-based instruments,
+				by measuring the Doppler widths and shifts in the spectra of airglow and aurora.
+
+				For example, the Wind Imaging Interferometer, WINDII, on the Upper Atmosphere Research Satellite, UARS,
+				(launched on September 12, 1991) measured the global wind and temperature patterns from 80 to 300 km by using the visible airglow emission from these altitudes
+				as a target and employing optical Doppler interferometry to measure the small wavelength shifts of the narrow atomic and molecular airglow emission lines induced
+				by the bulk velocity of the atmosphere carrying the emitting species. The instrument was an all-glass field-widened achromatically and
+				thermally compensated phase-stepping Michelson interferometer, along with a bare CCD detector that imaged the airglow limb through the interferometer.
+				A sequence of phase-stepped images was processed to derive the wind velocity for two orthogonal view directions, yielding the horizontal wind vector. [5] </p>
+
+				 The applications extend even more to the study solar variability and to characterize the Sun's interior
+				along with the various components of magnetic activity. For this we have for example the Helioseismic and Magnetic Imager (HMI), on the Solar Dynamics Observatory. And there many others space
+				applications where variants devices of the michelson's interferometer are applied.[6][7]
+				</p>
+				<br><br>
+
+
+			</div>
+
+		</div>
+	</div>
+	<div id="LM" class="container-fluid">
+		<h1 style="color: black">Learn more</h1>
+		<div class="row">
+			<div class="col-md-12">
+				<h3 style="color: black"id="AR">Apps and resources </h3>
+				<br>
+				<h4 style="color: black">Simulator</h4>
+				David Carvalho and Felipe Chen, students from Polythecnic Institute of Engeneering of Porto (ISEP), developed a programme to simulate the entire michelson interferometer experiment:
+				<a href="https://github.com/deep-in-the-pc/Michelson-interferometer-Simulator" target="_blank">download link</a>
+				<br><br>
+				<h4 style="color: black">Books</h4> <br>
+
+				<a href="https://www.amazon.co.uk/Michelson-interferometer-Ronald-Jesse-Russell/dp/B007L9O84M" target="_blank">
+					<img src="img/book1_.jpg" class="img-thumbnail rounded float-left" alt="Book1">
+				</a>
+				<a href="https://www.amazon.co.uk/Michelson-Interferometer-Websters-Timeline-1887-2007/dp/B0062QTA4I/ref=sr_1_2?s=books&ie=UTF8&qid=1544776605&sr=1-2&keywords=michelson+interferometer" target="_blank">
+					<img src="img/book2_.jpg" class="img-thumbnail rounded float-left" alt="Book2">
+				</a>
+				<a href="https://www.amazon.co.uk/Introduction-Physics-Waves-Tim-Freegarde/dp/0521147166/ref=sr_1_1?s=books&ie=UTF8&qid=1544777484&sr=1-1&keywords=waves+physics" target="_blank">
+					<img src="img/book3.jpg" class="img-thumbnail rounded float-left" alt="Book3">
+				</a>
+				<a href="https://www.amazon.co.uk/Michelson-morley-Experiments-Physics-History-Science/dp/9813278188/ref=sr_1_2?s=books&ie=UTF8&qid=1544777694&sr=1-2&keywords=interferometer" target="_blank">
+					<img src="img/book4.jpg" class="img-thumbnail rounded float-left" alt="Book4">
+				</a>
+				<a href="https://www.amazon.co.uk/Introduction-Modern-Optics-Dover-Physics/dp/0486659577/ref=sr_1_3?s=books&ie=UTF8&qid=1544778113&sr=1-3&keywords=optic+physics" target="_blank">
+					<img src="img/book5.jpg" class="img-thumbnail rounded float-left" alt="Book5">
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+	<div id="..." class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h3 style="color: black" id="BR">Articles and references</h3>
+				<br>
+				<table class="table">
+					<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col"></th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr >
+						<th scope="row">1</th>
+						<td><a href="http://iopscience.iop.org/article/10.1088/0264-9381/26/8/085012/meta" target="_blank">Gravitational wave detector</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_32.html" target="_blank">Spectrometry by Fourier transform</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td><a href="http://blockeng.com/technology/ftirtechnology.html" target="_blank">Description of Michelson Interferometer</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td><a href="https://www.renishaw.com/en/interferometry-explained--7854" target="_blank">Working principle</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2012RG000390" target="_blank">Atmospheric Winds measurement</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<td><a href="http://hmi.stanford.edu/Description/HMI_Overview.html" target="_blank">Solar variability</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td><a href="https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Interferometry.html" target="_blank">Interferometry - IPFS</a> </td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td><a href="https://en.wikipedia.org/wiki/Michelson_interferometer" target="_blank">Overview</a> </td>
+					</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<!--- Jumbotron -->
+
+
+<!--- Welcome Section -->
+
+
+<!--- Three Column Section -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+</div>
+<!--- Footer -->
+<footer class="modal-footer">
+	<div class="container">
+		<span class="text-muted">
+			Webpage created and designed by Erendiro Pedro and Elmer Graça from Polythecnic Institute of Engeneering of Porto (ISEP)
+			<br> Last update: 12/2018
+		</span>
+	</div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
